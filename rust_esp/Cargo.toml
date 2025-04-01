@@ -1,0 +1,10 @@
+[package]
+name = "rust_esp"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+anyhow      = "=1.0.97"
+esp-idf-svc = "=0.51.0"
+log         = "=0.4.27"
+ws2812-esp32-rmt-driver = "0.12.0"

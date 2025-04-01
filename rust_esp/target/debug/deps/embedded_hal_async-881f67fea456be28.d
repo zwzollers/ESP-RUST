@@ -1,0 +1,10 @@
+C:\Users\zwzol\Documents\Code\GIT\ESP-RUST\rust_esp\target\debug\deps\libembedded_hal_async-881f67fea456be28.rmeta: C:\Users\zwzol\.cargo\registry\src\index.crates.io-6f17d22bba15001f\embedded-hal-async-1.0.0\src\lib.rs C:\Users\zwzol\.cargo\registry\src\index.crates.io-6f17d22bba15001f\embedded-hal-async-1.0.0\src\delay.rs C:\Users\zwzol\.cargo\registry\src\index.crates.io-6f17d22bba15001f\embedded-hal-async-1.0.0\src\digital.rs C:\Users\zwzol\.cargo\registry\src\index.crates.io-6f17d22bba15001f\embedded-hal-async-1.0.0\src\i2c.rs C:\Users\zwzol\.cargo\registry\src\index.crates.io-6f17d22bba15001f\embedded-hal-async-1.0.0\src\spi.rs C:\Users\zwzol\.cargo\registry\src\index.crates.io-6f17d22bba15001f\embedded-hal-async-1.0.0\src\../README.md
+
+C:\Users\zwzol\Documents\Code\GIT\ESP-RUST\rust_esp\target\debug\deps\embedded_hal_async-881f67fea456be28.d: C:\Users\zwzol\.cargo\registry\src\index.crates.io-6f17d22bba15001f\embedded-hal-async-1.0.0\src\lib.rs C:\Users\zwzol\.cargo\registry\src\index.crates.io-6f17d22bba15001f\embedded-hal-async-1.0.0\src\delay.rs C:\Users\zwzol\.cargo\registry\src\index.crates.io-6f17d22bba15001f\embedded-hal-async-1.0.0\src\digital.rs C:\Users\zwzol\.cargo\registry\src\index.crates.io-6f17d22bba15001f\embedded-hal-async-1.0.0\src\i2c.rs C:\Users\zwzol\.cargo\registry\src\index.crates.io-6f17d22bba15001f\embedded-hal-async-1.0.0\src\spi.rs C:\Users\zwzol\.cargo\registry\src\index.crates.io-6f17d22bba15001f\embedded-hal-async-1.0.0\src\../README.md
+
+C:\Users\zwzol\.cargo\registry\src\index.crates.io-6f17d22bba15001f\embedded-hal-async-1.0.0\src\lib.rs:
+C:\Users\zwzol\.cargo\registry\src\index.crates.io-6f17d22bba15001f\embedded-hal-async-1.0.0\src\delay.rs:
+C:\Users\zwzol\.cargo\registry\src\index.crates.io-6f17d22bba15001f\embedded-hal-async-1.0.0\src\digital.rs:
+C:\Users\zwzol\.cargo\registry\src\index.crates.io-6f17d22bba15001f\embedded-hal-async-1.0.0\src\i2c.rs:
+C:\Users\zwzol\.cargo\registry\src\index.crates.io-6f17d22bba15001f\embedded-hal-async-1.0.0\src\spi.rs:
+C:\Users\zwzol\.cargo\registry\src\index.crates.io-6f17d22bba15001f\embedded-hal-async-1.0.0\src\../README.md:
