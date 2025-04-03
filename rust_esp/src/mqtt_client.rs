@@ -1,7 +1,10 @@
 use core::time::Duration;
-use esp_idf_svc::mqtt::client::*;
-use esp_idf_svc::sys::EspError;
 use anyhow::Result;
+
+use esp_idf_svc::{
+    sys::EspError,
+    mqtt::client::{EspMqttClient, EspMqttEvent, QoS, MqttClientConfiguration}
+};
 
 fn mqtt_create<'a, F>(
     url: &str,

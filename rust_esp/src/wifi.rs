@@ -1,10 +1,10 @@
 use anyhow::{bail, Result};
+
 use esp_idf_svc::{
     eventloop::EspSystemEventLoop,
     hal::peripheral,
     wifi::{AuthMethod, BlockingWifi, ClientConfiguration, Configuration, EspWifi},
 };
-use log::info;
 
 pub fn wifi(
     ssid: &str,
@@ -18,7 +18,7 @@ pub fn wifi(
     }
     if pass.is_empty() {
         auth_method = AuthMethod::None;
-        info!("Wifi password is empty");
+        println!("Wifi password is empty");
     }
     let mut esp_wifi = EspWifi::new(modem, sysloop.clone(), None)?;
 
@@ -26,24 +26,24 @@ pub fn wifi(
 
     wifi.set_configuration(&Configuration::Client(ClientConfiguration::default()))?;
 
-    info!("Starting wifi...");
+    println!("Starting wifi...");
 
     wifi.start()?;
 
-    info!("Scanning...");
+    println!("Scanning...");
 
     let ap_infos = wifi.scan()?;
 
     let ours = ap_infos.into_iter().find(|a| a.ssid == ssid);
 
     let channel = if let Some(ours) = ours {
-        info!(
+        println!(
             "Found configured access point {} on channel {}",
             ssid, ours.channel
         );
         Some(ours.channel)
     } else {
-        info!(
+        println!(
             "Configured access point {} not found during scanning, will go with unknown channel",
             ssid
         );
@@ -62,17 +62,17 @@ pub fn wifi(
         ..Default::default()
     }))?;
 
-    info!("Connecting wifi...");
+    println!("Connecting wifi...");
 
     wifi.connect()?;
 
-    info!("Waiting for DHCP lease...");
+    println!("Waiting for DHCP lease...");
 
     wifi.wait_netif_up()?;
 
     let ip_info = wifi.wifi().sta_netif().get_ip_info()?;
 
-    info!("Wifi DHCP info: {:?}", ip_info);
+    println!("Wifi DHCP info: {:?}", ip_info);
 
     Ok(Box::new(esp_wifi))
 }
